@@ -11,7 +11,7 @@ keywords = ["ssh", "tunnel", "async"]
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-async-ssh2-lite = "0.2.1"
+async-ssh2-lite = { git = "https://github.com/williamabradley/async-ssh2-lite", branch = "windows-openssl-support", features = [ "openssl-on-win32" ] }
 async-std-resolver = "0.20.3"
 plain_path = "0.1.0"
 tokio = { version = "1.6.1", features = ["rt"] }
